@@ -5,6 +5,7 @@
 	<groupId>com.agriflux</groupId>
 	<artifactId>agriflux-shared</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<description>Progetto Shared per i microservizi Agriflux</description>
 	
 	<properties>
 		<java.version>21</java.version>
