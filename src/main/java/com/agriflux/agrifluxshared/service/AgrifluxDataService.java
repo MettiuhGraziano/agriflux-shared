@@ -1,10 +1,12 @@
 package com.agriflux.agrifluxshared.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.agriflux.agrifluxshared.dto.AmbienteDTO;
 import com.agriflux.agrifluxshared.dto.ColturaDTO;
 import com.agriflux.agrifluxshared.dto.ColturaGroupByProdottoDTO;
+import com.agriflux.agrifluxshared.dto.ColturaListPrezzoDataRaccoltoDTO;
 import com.agriflux.agrifluxshared.dto.MorfologiaDTO;
 import com.agriflux.agrifluxshared.dto.ProduzioneDTO;
 import com.agriflux.agrifluxshared.dto.TerrenoDTO;
@@ -53,4 +55,12 @@ public interface AgrifluxDataService {
 	 * @return List di ColturaGroupByProdottoDTO
 	 */
 	List<ColturaGroupByProdottoDTO> countColtureGroupByProdotto();
+	
+	/**
+	 * Metodo che torna una mappa con in chiave la tipologia di prodotto e come valore un oggetto
+	 * che ha le liste di prezzi e date raccolto relative a quel determinato prodotto
+	 * 
+	 * @return Map di ColturaListPrezzoDataRaccoltoDTO
+	 */
+	Map<String, ColturaListPrezzoDataRaccoltoDTO> findPrezziAndDateColtura();
 }
