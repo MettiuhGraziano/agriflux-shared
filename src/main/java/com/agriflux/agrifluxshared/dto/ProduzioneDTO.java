@@ -15,8 +15,8 @@ public class ProduzioneDTO {
 	private int tempoTrapianto;
 	private int tempoMaturazione;
 	private int tempoRaccolta; 
-	private long fkIdColtura;
-	private long fkIdMorfologia;
+	private long idColtura;
+	private long idMorfologia;
 	
 	public long getIdProduzione() {
 		return idProduzione;
@@ -106,20 +106,20 @@ public class ProduzioneDTO {
 		this.tempoRaccolta = tempoRaccolta;
 	}
 	
-	public long getFkIdColtura() {
-		return fkIdColtura;
+	public long getIdColtura() {
+		return idColtura;
 	}
 	
-	public void setFkIdColtura(long fkIdColtura) {
-		this.fkIdColtura = fkIdColtura;
+	public void setIdColtura(long idColtura) {
+		this.idColtura = idColtura;
 	}
 	
-	public long getFkIdMorfologia() {
-		return fkIdMorfologia;
+	public long getIdMorfologia() {
+		return idMorfologia;
 	}
 	
-	public void setFkIdMorfologia(long fkIdMorfologia) {
-		this.fkIdMorfologia = fkIdMorfologia;
+	public void setIdMorfologia(long idMorfologia) {
+		this.idMorfologia = idMorfologia;
 	}
 	
 }

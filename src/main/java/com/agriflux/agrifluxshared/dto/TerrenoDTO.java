@@ -13,8 +13,8 @@ public class TerrenoDTO {
 	private BigDecimal temperatura;
 	private int disponibilitaIrrigua;
 	private Date dataRilevazione;
-	private long fkIdColtura;
-	private long fkIdMorfologia;
+	private long idColtura;
+	private long idMorfologia;
 	
 	public long getIdRilevazioneTerreno() {
 		return idRilevazioneTerreno;
@@ -80,20 +80,20 @@ public class TerrenoDTO {
 		this.dataRilevazione = dataRilevazione;
 	}
 	
-	public long getFkIdColtura() {
-		return fkIdColtura;
+	public long getIdColtura() {
+		return idColtura;
 	}
 	
-	public void setFkIdColtura(long fkIdColtura) {
-		this.fkIdColtura = fkIdColtura;
+	public void setIdColtura(long idColtura) {
+		this.idColtura = idColtura;
 	}
 	
-	public long getFkIdMorfologia() {
-		return fkIdMorfologia;
+	public long getIdMorfologia() {
+		return idMorfologia;
 	}
 	
-	public void setFkIdMorfologia(long fkIdMorfologia) {
-		this.fkIdMorfologia = fkIdMorfologia;
+	public void setIdMorfologia(long idMorfologia) {
+		this.idMorfologia = idMorfologia;
 	}
 	
 }

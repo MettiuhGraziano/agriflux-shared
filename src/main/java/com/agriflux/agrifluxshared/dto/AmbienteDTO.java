@@ -12,7 +12,7 @@ public class AmbienteDTO {
 	private BigDecimal irraggiamentoMedio;
 	private BigDecimal ombreggiamentoMedio;
 	private Date dataRilevazione;
-	private long fkIdColtura;
+	private long idColtura;
 	
 	public long getIdAmbiente() {
 		return idAmbiente;
@@ -70,12 +70,12 @@ public class AmbienteDTO {
 		this.dataRilevazione = dataRilevazione;
 	}
 	
-	public long getFkIdColtura() {
-		return fkIdColtura;
+	public long getIdColtura() {
+		return idColtura;
 	}
 	
-	public void setFkIdColtura(long fkIdColtura) {
-		this.fkIdColtura = fkIdColtura;
+	public void setIdColtura(long idColtura) {
+		this.idColtura = idColtura;
 	}
 	
 }
