@@ -10,6 +10,7 @@ import com.agriflux.agrifluxshared.dto.ColturaListPrezzoDataRaccoltoDTO;
 import com.agriflux.agrifluxshared.dto.MorfologiaDTO;
 import com.agriflux.agrifluxshared.dto.ProduzioneDTO;
 import com.agriflux.agrifluxshared.dto.ProduzioneColturaDTO;
+import com.agriflux.agrifluxshared.dto.ProduzioneColturaTempiDTO;
 import com.agriflux.agrifluxshared.dto.TerrenoDTO;
 
 public interface AgrifluxDataService {
@@ -73,4 +74,13 @@ public interface AgrifluxDataService {
 	 * @return Map -> key : Prodotto | value : Map -> key : Anno Riferimento | value : {@code ProduzioneColturaDTO}
 	 */
 	Map<String, Map<String, ProduzioneColturaDTO>> findColtureJoinProduzione();
+	
+	/**
+	 * Metodo che restituisce una mappa con in chiave l'anno di semina e come valore una lista di oggetti
+	 * contenenti il prodotto coltivato e la lista delle medie dei tempi dalla semina alla raccolta per il 
+	 * singolo prodotto
+	 * 
+	 * @return Map di ProduzioneColturaTempiDTO
+	 */
+	Map<String, List<ProduzioneColturaTempiDTO>> findProduzioneTempiJoinColtura();
 }
