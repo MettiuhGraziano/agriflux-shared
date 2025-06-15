@@ -13,6 +13,7 @@ import com.agriflux.agrifluxshared.dto.ProduzioneMorfologiaColturaDTO;
 import com.agriflux.agrifluxshared.dto.ProduzioneColturaDTO;
 import com.agriflux.agrifluxshared.dto.ProduzioneColturaTempiDTO;
 import com.agriflux.agrifluxshared.dto.TerrenoDTO;
+import com.agriflux.agrifluxshared.dto.TerrenoMorfologiaColturaDTO;
 
 public interface AgrifluxDataService {
 	
@@ -92,4 +93,12 @@ public interface AgrifluxDataService {
 	 * @return Map di ProduzioneMorfologiaColturaDTO
 	 */
 	Map<Long, ProduzioneMorfologiaColturaDTO> findProduzioneJoinColturaMorfologia();
+	
+	/**
+	 * Metodo che restituisce una mappa con in chiave l'id della rilevazione morfologica e come valore 
+	 * una lista di oggetti contenenti il prodotto coltivato e la lista di date rilevazione del terreno 
+	 * 
+	 * @return Map di TerrenoMorfologiaColturaDTO
+	 */
+	Map<Long, List<TerrenoMorfologiaColturaDTO>> findTerrenoJoinColturaMorfologia();
 }
