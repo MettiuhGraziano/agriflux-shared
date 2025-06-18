@@ -1,7 +1,7 @@
-package com.agriflux.agrifluxshared.dto;
+package com.agriflux.agrifluxshared.dto.terreno;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class TerrenoDTO {
 	
@@ -12,7 +12,7 @@ public class TerrenoDTO {
 	private BigDecimal porosita;
 	private BigDecimal temperatura;
 	private int disponibilitaIrrigua;
-	private Date dataRilevazione;
+	private LocalDateTime dataRilevazione;
 	private long idColtura;
 	private long idMorfologia;
 	
@@ -72,11 +72,11 @@ public class TerrenoDTO {
 		this.disponibilitaIrrigua = disponibilitaIrrigua;
 	}
 	
-	public Date getDataRilevazione() {
+	public LocalDateTime getDataRilevazione() {
 		return dataRilevazione;
 	}
 	
-	public void setDataRilevazione(Date dataRilevazione) {
+	public void setDataRilevazione(LocalDateTime dataRilevazione) {
 		this.dataRilevazione = dataRilevazione;
 	}
 	

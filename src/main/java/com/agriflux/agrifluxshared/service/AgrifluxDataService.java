@@ -4,16 +4,15 @@ import java.util.List;
 import java.util.Map;
 
 import com.agriflux.agrifluxshared.dto.AmbienteDTO;
-import com.agriflux.agrifluxshared.dto.ColturaDTO;
-import com.agriflux.agrifluxshared.dto.ColturaGroupByProdottoDTO;
-import com.agriflux.agrifluxshared.dto.ColturaListPrezzoDataRaccoltoDTO;
-import com.agriflux.agrifluxshared.dto.MorfologiaDTO;
-import com.agriflux.agrifluxshared.dto.ProduzioneDTO;
-import com.agriflux.agrifluxshared.dto.ProduzioneMorfologiaColturaDTO;
 import com.agriflux.agrifluxshared.dto.ProduzioneColturaDTO;
 import com.agriflux.agrifluxshared.dto.ProduzioneColturaTempiDTO;
-import com.agriflux.agrifluxshared.dto.TerrenoDTO;
-import com.agriflux.agrifluxshared.dto.TerrenoMorfologiaColturaDTO;
+import com.agriflux.agrifluxshared.dto.ProduzioneDTO;
+import com.agriflux.agrifluxshared.dto.ProduzioneMorfologiaColturaDTO;
+import com.agriflux.agrifluxshared.dto.coltura.ColturaDTO;
+import com.agriflux.agrifluxshared.dto.coltura.ColturaGroupByProdottoDTO;
+import com.agriflux.agrifluxshared.dto.coltura.ColturaListPrezzoDataRaccoltoDTO;
+import com.agriflux.agrifluxshared.dto.terreno.TerrenoDTO;
+import com.agriflux.agrifluxshared.dto.terreno.TerrenoMorfologiaColturaDTO;
 
 public interface AgrifluxDataService {
 	
@@ -30,13 +29,6 @@ public interface AgrifluxDataService {
 	 * @return List di AmbienteDTO
 	 */
 	List<AmbienteDTO> findAllAmbienteSortById();
-	
-	/**
-	 * Metodo che restituisce la lista di dati Morfologici ordinati in modo ASCENDENTE tramite l'ID
-	 * 
-	 * @return List di MorfologiaDTO
-	 */
-	List<MorfologiaDTO> findAllMorfologiaSortById();
 	
 	/**
 	 * Metodo che restituisce la lista di Terreni ordinati in modo ASCENDENTE tramite l'ID

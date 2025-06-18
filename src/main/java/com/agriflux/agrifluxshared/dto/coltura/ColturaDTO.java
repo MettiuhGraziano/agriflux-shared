@@ -1,15 +1,15 @@
-package com.agriflux.agrifluxshared.dto;
+package com.agriflux.agrifluxshared.dto.coltura;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class ColturaDTO {
 	
 	private long idColtura;
 	private String prodottoColtivato;
 	private BigDecimal prezzoKg;
-	private Date dataSemina;
-	private Date dataRaccolto;
+	private LocalDateTime dataSemina;
+	private LocalDateTime dataRaccolto;
 	
 	public long getIdColtura() {
 		return idColtura;
@@ -35,19 +35,19 @@ public class ColturaDTO {
 		this.prezzoKg = prezzoKg;
 	}
 	
-	public Date getDataSemina() {
+	public LocalDateTime getDataSemina() {
 		return dataSemina;
 	}
 	
-	public void setDataSemina(Date dataSemina) {
+	public void setDataSemina(LocalDateTime dataSemina) {
 		this.dataSemina = dataSemina;
 	}
 	
-	public Date getDataRaccolto() {
+	public LocalDateTime getDataRaccolto() {
 		return dataRaccolto;
 	}
 	
-	public void setDataRaccolto(Date dataRaccolto) {
+	public void setDataRaccolto(LocalDateTime dataRaccolto) {
 		this.dataRaccolto = dataRaccolto;
 	}
 }

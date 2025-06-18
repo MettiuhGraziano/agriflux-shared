@@ -2,8 +2,8 @@ package com.agriflux.agrifluxshared.enumeratori;
 
 public enum LitologiaTerrenoEnum {
 	
-	SABBIOSO(1, "Terreno Sabbioso"),
-	ARGILLOSO(2, "Terreno Argilloso"),
+	SABBIOSO(1, "Terreno ricco di particelle di sabbia, con scarso contenuto di limo e argilla."),
+	ARGILLOSO(2, "Terreno prevalentemente composto da particelle di limo, con una miscela equilibrata di sabbia e argilla."),
 	LIMOSO(3, "Terreno Limoso"),
 	TORBOSO(4, "Terreno Torboso"),
 	SALINO(5, "Terreno Salino"),

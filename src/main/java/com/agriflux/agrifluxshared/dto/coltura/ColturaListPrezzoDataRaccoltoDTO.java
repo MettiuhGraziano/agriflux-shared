@@ -1,7 +1,7 @@
-package com.agriflux.agrifluxshared.dto;
+package com.agriflux.agrifluxshared.dto.coltura;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -11,9 +11,9 @@ public class ColturaListPrezzoDataRaccoltoDTO {
 	private List<BigDecimal> prezzoKgList;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-	private List<Date> dataRaccoltoList;
+	private List<LocalDateTime> dataRaccoltoList;
 
-	public ColturaListPrezzoDataRaccoltoDTO(List<BigDecimal> prezzoKgList, List<Date> dataRaccoltoList) {
+	public ColturaListPrezzoDataRaccoltoDTO(List<BigDecimal> prezzoKgList, List<LocalDateTime> dataRaccoltoList) {
 		this.prezzoKgList = prezzoKgList;
 		this.dataRaccoltoList = dataRaccoltoList;
 	}
@@ -28,11 +28,11 @@ public class ColturaListPrezzoDataRaccoltoDTO {
 		this.prezzoKgList = prezzoKgList;
 	}
 
-	public List<Date> getDataRaccoltoList() {
+	public List<LocalDateTime> getDataRaccoltoList() {
 		return dataRaccoltoList;
 	}
 
-	public void setDataRaccoltoList(List<Date> dataRaccoltoList) {
+	public void setDataRaccoltoList(List<LocalDateTime> dataRaccoltoList) {
 		this.dataRaccoltoList = dataRaccoltoList;
 	}
 	

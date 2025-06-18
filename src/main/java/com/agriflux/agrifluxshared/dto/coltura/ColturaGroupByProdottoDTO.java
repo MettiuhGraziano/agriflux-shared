@@ -1,4 +1,4 @@
-package com.agriflux.agrifluxshared.dto;
+package com.agriflux.agrifluxshared.dto.coltura;
 
 public class ColturaGroupByProdottoDTO {
 	
