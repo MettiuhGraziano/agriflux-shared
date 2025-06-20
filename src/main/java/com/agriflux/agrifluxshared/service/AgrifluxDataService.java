@@ -3,14 +3,14 @@ package com.agriflux.agrifluxshared.service;
 import java.util.List;
 import java.util.Map;
 
-import com.agriflux.agrifluxshared.dto.AmbienteDTO;
-import com.agriflux.agrifluxshared.dto.ProduzioneColturaDTO;
-import com.agriflux.agrifluxshared.dto.ProduzioneColturaTempiDTO;
-import com.agriflux.agrifluxshared.dto.ProduzioneDTO;
-import com.agriflux.agrifluxshared.dto.ProduzioneMorfologiaColturaDTO;
+import com.agriflux.agrifluxshared.dto.ambiente.AmbienteDTO;
 import com.agriflux.agrifluxshared.dto.coltura.ColturaDTO;
 import com.agriflux.agrifluxshared.dto.coltura.ColturaGroupByProdottoDTO;
 import com.agriflux.agrifluxshared.dto.coltura.ColturaListPrezzoDataRaccoltoDTO;
+import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaDTO;
+import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaTempiDTO;
+import com.agriflux.agrifluxshared.dto.produzione.ProduzioneDTO;
+import com.agriflux.agrifluxshared.dto.produzione.ProduzioneMorfologiaColturaDTO;
 import com.agriflux.agrifluxshared.dto.terreno.TerrenoDTO;
 import com.agriflux.agrifluxshared.dto.terreno.TerrenoMorfologiaColturaDTO;
 

@@ -1,4 +1,4 @@
-package com.agriflux.agrifluxshared.dto;
+package com.agriflux.agrifluxshared.dto.produzione;
 
 import java.math.BigDecimal;
 

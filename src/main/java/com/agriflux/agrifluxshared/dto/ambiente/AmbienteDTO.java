@@ -1,4 +1,4 @@
-package com.agriflux.agrifluxshared.dto;
+package com.agriflux.agrifluxshared.dto.ambiente;
 
 import java.math.BigDecimal;
 import java.util.Date;
