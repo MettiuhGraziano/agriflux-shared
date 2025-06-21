@@ -16,10 +16,10 @@ public class DatiParticellaDTO {
 	private BigDecimal estensione;
 	private BigDecimal pendenza;
 	
-	private long idLitologia;
+	private String tipologiaLitologia;
 	
 	public DatiParticellaDTO(long idParticella, String comune, String foglio, String qualita, String annoInstallazione,
-			String esposizione, BigDecimal costo, BigDecimal estensione, BigDecimal pendenza, long idLitologia) {
+			String esposizione, BigDecimal costo, BigDecimal estensione, BigDecimal pendenza, String tipologiaLitologia) {
 		this.idParticella = idParticella;
 		this.comune = comune;
 		this.foglio = foglio;
@@ -29,7 +29,7 @@ public class DatiParticellaDTO {
 		this.costo = costo;
 		this.estensione = estensione;
 		this.pendenza = pendenza;
-		this.idLitologia = idLitologia;
+		this.tipologiaLitologia = tipologiaLitologia;
 	}
 
 	public DatiParticellaDTO() {}
@@ -106,12 +106,12 @@ public class DatiParticellaDTO {
 		this.pendenza = pendenza;
 	}
 
-	public long getIdLitologia() {
-		return idLitologia;
+	public String getTipologiaLitologia() {
+		return tipologiaLitologia;
 	}
 
-	public void setIdLitologia(long idLitologia) {
-		this.idLitologia = idLitologia;
+	public void setTipologiaLitologia(String tipologiaLitologia) {
+		this.tipologiaLitologia = tipologiaLitologia;
 	}
-	
+
 }

@@ -6,5 +6,10 @@ import com.agriflux.agrifluxshared.dto.particella.DatiParticellaDTO;
 
 public interface DatiParticellaService {
 	
-	List<DatiParticellaDTO> findAllParticellaIdAnno();
+	/**
+	 * Metodo che restituisce la lista di Particelle ordinate in modo ASCENDENTE tramite l'ID
+	 * 
+	 * @return List di DatiParticellaDTO
+	 */
+	List<DatiParticellaDTO> findAllParticellaSortById();
 }
