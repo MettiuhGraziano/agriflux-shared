@@ -1,24 +1,24 @@
 package com.agriflux.agrifluxshared.dto.particella;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class DatiParticellaDateDTO {
 	
-	private LocalDateTime dataUltimoRaccolto;
+	private LocalDate dataUltimoRaccolto;
 	private String annoInstallazione;
 	
 	public DatiParticellaDateDTO() {}
 	
-	public DatiParticellaDateDTO(LocalDateTime dataUltimoRaccolto, String annoInstallazione) {
+	public DatiParticellaDateDTO(LocalDate dataUltimoRaccolto, String annoInstallazione) {
 		this.dataUltimoRaccolto = dataUltimoRaccolto;
 		this.annoInstallazione = annoInstallazione;
 	}
 
-	public LocalDateTime getDataUltimoRaccolto() {
+	public LocalDate getDataUltimoRaccolto() {
 		return dataUltimoRaccolto;
 	}
 
-	public void setDataUltimoRaccolto(LocalDateTime dataUltimoRaccolto) {
+	public void setDataUltimoRaccolto(LocalDate dataUltimoRaccolto) {
 		this.dataUltimoRaccolto = dataUltimoRaccolto;
 	}
 

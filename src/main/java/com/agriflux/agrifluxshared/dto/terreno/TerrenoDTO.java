@@ -1,7 +1,7 @@
 package com.agriflux.agrifluxshared.dto.terreno;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class TerrenoDTO {
 	
@@ -11,10 +11,10 @@ public class TerrenoDTO {
 	private BigDecimal capacitaAssorbente;
 	private BigDecimal porosita;
 	private BigDecimal temperatura;
-	private int disponibilitaIrrigua;
-	private LocalDateTime dataRilevazione;
-	private long idColtura;
-	private long idMorfologia;
+	private LocalDate dataRilevazione;
+	private long idParticellaParticella;
+	
+	TerrenoDTO() {}
 	
 	public long getIdRilevazioneTerreno() {
 		return idRilevazioneTerreno;
@@ -64,36 +64,20 @@ public class TerrenoDTO {
 		this.temperatura = temperatura;
 	}
 	
-	public int getDisponibilitaIrrigua() {
-		return disponibilitaIrrigua;
-	}
-	
-	public void setDisponibilitaIrrigua(int disponibilitaIrrigua) {
-		this.disponibilitaIrrigua = disponibilitaIrrigua;
-	}
-	
-	public LocalDateTime getDataRilevazione() {
+	public LocalDate getDataRilevazione() {
 		return dataRilevazione;
 	}
 	
-	public void setDataRilevazione(LocalDateTime dataRilevazione) {
+	public void setDataRilevazione(LocalDate dataRilevazione) {
 		this.dataRilevazione = dataRilevazione;
 	}
-	
-	public long getIdColtura() {
-		return idColtura;
+
+	public long getIdParticellaParticella() {
+		return idParticellaParticella;
 	}
-	
-	public void setIdColtura(long idColtura) {
-		this.idColtura = idColtura;
+
+	public void setIdParticellaParticella(long idParticellaParticella) {
+		this.idParticellaParticella = idParticellaParticella;
 	}
-	
-	public long getIdMorfologia() {
-		return idMorfologia;
-	}
-	
-	public void setIdMorfologia(long idMorfologia) {
-		this.idMorfologia = idMorfologia;
-	}
-	
+
 }

@@ -8,7 +8,6 @@ import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaTempiDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneMorfologiaColturaDTO;
-import com.agriflux.agrifluxshared.dto.terreno.TerrenoDTO;
 import com.agriflux.agrifluxshared.dto.terreno.TerrenoMorfologiaColturaDTO;
 
 public interface AgrifluxDataService {
@@ -19,13 +18,6 @@ public interface AgrifluxDataService {
 	 * @return List di AmbienteDTO
 	 */
 	List<AmbienteDTO> findAllAmbienteSortById();
-	
-	/**
-	 * Metodo che restituisce la lista di Terreni ordinati in modo ASCENDENTE tramite l'ID
-	 * 
-	 * @return List di TerrenoDTO
-	 */
-	List<TerrenoDTO> findAllTerrenoSortById();
 	
 	/**
 	 * Metodo che restituisce la lista di dati di Produzione ordinati in modo ASCENDENTE tramite l'ID
