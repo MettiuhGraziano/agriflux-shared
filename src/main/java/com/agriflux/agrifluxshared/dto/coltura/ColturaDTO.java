@@ -6,10 +6,10 @@ import java.time.LocalDateTime;
 public class ColturaDTO {
 	
 	private long idColtura;
-	private String prodottoColtivato;
 	private BigDecimal prezzoKg;
 	private LocalDateTime dataSemina;
 	private LocalDateTime dataRaccolto;
+	private String nomeOrtaggio;
 	
 	public long getIdColtura() {
 		return idColtura;
@@ -17,14 +17,6 @@ public class ColturaDTO {
 	
 	public void setIdColtura(long idColtura) {
 		this.idColtura = idColtura;
-	}
-	
-	public String getProdottoColtivato() {
-		return prodottoColtivato;
-	}
-	
-	public void setProdottoColtivato(String prodottoColtivato) {
-		this.prodottoColtivato = prodottoColtivato;
 	}
 	
 	public BigDecimal getPrezzoKg() {
@@ -49,5 +41,13 @@ public class ColturaDTO {
 	
 	public void setDataRaccolto(LocalDateTime dataRaccolto) {
 		this.dataRaccolto = dataRaccolto;
+	}
+
+	public String getNomeOrtaggio() {
+		return nomeOrtaggio;
+	}
+
+	public void setNomeOrtaggio(String nomeOrtaggio) {
+		this.nomeOrtaggio = nomeOrtaggio;
 	}
 }

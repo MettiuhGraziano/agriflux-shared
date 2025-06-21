@@ -4,9 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.agriflux.agrifluxshared.dto.ambiente.AmbienteDTO;
-import com.agriflux.agrifluxshared.dto.coltura.ColturaDTO;
-import com.agriflux.agrifluxshared.dto.coltura.ColturaGroupByProdottoDTO;
-import com.agriflux.agrifluxshared.dto.coltura.ColturaListPrezzoDataRaccoltoDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaTempiDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneDTO;
@@ -15,13 +12,6 @@ import com.agriflux.agrifluxshared.dto.terreno.TerrenoDTO;
 import com.agriflux.agrifluxshared.dto.terreno.TerrenoMorfologiaColturaDTO;
 
 public interface AgrifluxDataService {
-	
-	/**
-	 * Metodo che restituisce la lista di Colture ordinate in modo ASCENDENTE tramite l'ID
-	 * 
-	 * @return List di ColtureDTO
-	 */
-	List<ColturaDTO> findAllColturaSortById();
 	
 	/**
 	 * Metodo che restituisce la lista di dati Ambientali ordinati in modo ASCENDENTE tramite l'ID
@@ -43,22 +33,6 @@ public interface AgrifluxDataService {
 	 * @return List di ProduzioneDTO
 	 */
 	List<ProduzioneDTO> findAllProduzioneSortById();
-	
-	/**
-	 * Metodo che restituisce una lista di oggetti che rappresentano il numero di prodotti singoli coltivati
-	 * raggruppati per il nome del prodotto coltivato stesso
-	 * 
-	 * @return List di ColturaGroupByProdottoDTO
-	 */
-	List<ColturaGroupByProdottoDTO> countColtureGroupByProdotto();
-	
-	/**
-	 * Metodo che restituisce una mappa con in chiave la tipologia di prodotto e come valore un oggetto
-	 * che ha le liste di prezzi e date raccolto relative a quel determinato prodotto
-	 * 
-	 * @return Map di ColturaListPrezzoDataRaccoltoDTO
-	 */
-	Map<String, ColturaListPrezzoDataRaccoltoDTO> findPrezziAndDateColtura();
 	
 	/**
 	 * Metodo che restituisce una mappa con chiave la tipologia di prodotto e come valore un'altra mappa con chiave
