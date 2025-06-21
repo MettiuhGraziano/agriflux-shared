@@ -5,20 +5,20 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-public class TerrenoMorfologiaColturaDTO {
+public class ParticellaColturaTerrenoDTO {
 	
 	private String prodottoColtivato;
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private List<LocalDate> dateRilevazione;
 	private Long idColtura;
 	
-	public TerrenoMorfologiaColturaDTO(String prodottoColtivato, List<LocalDate> dateRilevazione, Long idColtura) {
+	public ParticellaColturaTerrenoDTO(String prodottoColtivato, List<LocalDate> dateRilevazione, Long idColtura) {
 		this.prodottoColtivato = prodottoColtivato;
 		this.dateRilevazione = dateRilevazione;
 		this.idColtura = idColtura;
 	}
 	
-	public TerrenoMorfologiaColturaDTO() {}
+	public ParticellaColturaTerrenoDTO() {}
 
 	public String getProdottoColtivato() {
 		return prodottoColtivato;
