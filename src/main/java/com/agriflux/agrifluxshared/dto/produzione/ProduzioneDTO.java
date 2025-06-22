@@ -16,11 +16,11 @@ public class ProduzioneDTO {
 	
 	private BigDecimal speseProduzione;
 	
-	private long idColtura;
+	private long idColturaColtura;
 
 	public ProduzioneDTO(long idProduzione, BigDecimal quantitaRaccolto, BigDecimal quantitaRaccoltoVenduto,
 			BigDecimal quantitaRaccoltoMarcio, BigDecimal quantitaRaccoltoTerzi, BigDecimal fatturatoRaccolto,
-			int numLavoratori, BigDecimal speseProduzione, long idColtura) {
+			int numLavoratori, BigDecimal speseProduzione, long idColturaColtura) {
 		this.idProduzione = idProduzione;
 		this.quantitaRaccolto = quantitaRaccolto;
 		this.quantitaRaccoltoVenduto = quantitaRaccoltoVenduto;
@@ -29,7 +29,7 @@ public class ProduzioneDTO {
 		this.fatturatoRaccolto = fatturatoRaccolto;
 		this.numLavoratori = numLavoratori;
 		this.speseProduzione = speseProduzione;
-		this.idColtura = idColtura;
+		this.idColturaColtura = idColturaColtura;
 	}
 	
 	ProduzioneDTO() {}
@@ -98,12 +98,12 @@ public class ProduzioneDTO {
 		this.speseProduzione = speseProduzione;
 	}
 
-	public long getIdColtura() {
-		return idColtura;
+	public long getIdColturaColtura() {
+		return idColturaColtura;
 	}
 
-	public void setIdColtura(long idColtura) {
-		this.idColtura = idColtura;
+	public void setIdColturaColtura(long idColturaColtura) {
+		this.idColturaColtura = idColturaColtura;
 	}
-	
+
 }

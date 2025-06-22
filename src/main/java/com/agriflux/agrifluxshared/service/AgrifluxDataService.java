@@ -6,7 +6,6 @@ import java.util.Map;
 import com.agriflux.agrifluxshared.dto.ambiente.AmbienteDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaTempiDTO;
-import com.agriflux.agrifluxshared.dto.produzione.ProduzioneDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneMorfologiaColturaDTO;
 
 public interface AgrifluxDataService {
@@ -18,12 +17,6 @@ public interface AgrifluxDataService {
 	 */
 	List<AmbienteDTO> findAllAmbienteSortById();
 	
-	/**
-	 * Metodo che restituisce la lista di dati di Produzione ordinati in modo ASCENDENTE tramite l'ID
-	 * 
-	 * @return List di ProduzioneDTO
-	 */
-	List<ProduzioneDTO> findAllProduzioneSortById();
 	
 	/**
 	 * Metodo che restituisce una mappa con chiave la tipologia di prodotto e come valore un'altra mappa con chiave

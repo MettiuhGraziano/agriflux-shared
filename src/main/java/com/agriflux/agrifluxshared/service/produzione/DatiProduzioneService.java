@@ -1,11 +1,16 @@
 package com.agriflux.agrifluxshared.service.produzione;
 
 import java.util.List;
-import java.util.Map;
 
-import com.agriflux.agrifluxshared.dto.produzione.ProduzioneJoinColturaFatturatoDTO;
+import com.agriflux.agrifluxshared.dto.produzione.ProduzioneDTO;
 
 public interface DatiProduzioneService {
 	
-	Map<Long, List<Map<Integer, ProduzioneJoinColturaFatturatoDTO>>> findProduzioneJoinColturaFatturato();
+	/**
+	 * Metodo che restituisce la lista di dati di Produzione ordinati in modo ASCENDENTE tramite l'ID
+	 * 
+	 * @return List di ProduzioneDTO
+	 */
+	List<ProduzioneDTO> findAllProduzioneSortById();
+	
 }
