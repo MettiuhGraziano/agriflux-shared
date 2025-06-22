@@ -6,13 +6,17 @@ public class ProduzioneColturaDTO {
 	
 	private BigDecimal quantitaRaccolto;
 	private BigDecimal quantitaRaccoltoVenduto;
-	private BigDecimal fatturatoColtura;
+	private BigDecimal quantitaRaccoltoMarcio;
+	private BigDecimal quantitaRaccoltoTerzi;
+	private BigDecimal fatturatoRaccolto;
 	
-	public ProduzioneColturaDTO(BigDecimal quantitaRaccolto,
-			BigDecimal quantitaRaccoltoVenduto, BigDecimal fatturatoColtura) {
+	public ProduzioneColturaDTO(BigDecimal quantitaRaccolto, BigDecimal quantitaRaccoltoVenduto,
+			BigDecimal quantitaRaccoltoMarcio, BigDecimal quantitaRaccoltoTerzi, BigDecimal fatturatoRaccolto) {
 		this.quantitaRaccolto = quantitaRaccolto;
 		this.quantitaRaccoltoVenduto = quantitaRaccoltoVenduto;
-		this.fatturatoColtura = fatturatoColtura;
+		this.quantitaRaccoltoMarcio = quantitaRaccoltoMarcio;
+		this.quantitaRaccoltoTerzi = quantitaRaccoltoTerzi;
+		this.fatturatoRaccolto = fatturatoRaccolto;
 	}
 	
 	public ProduzioneColturaDTO() {}
@@ -33,12 +37,28 @@ public class ProduzioneColturaDTO {
 		this.quantitaRaccoltoVenduto = quantitaRaccoltoVenduto;
 	}
 
-	public BigDecimal getFatturatoColtura() {
-		return fatturatoColtura;
+	public BigDecimal getQuantitaRaccoltoMarcio() {
+		return quantitaRaccoltoMarcio;
 	}
 
-	public void setFatturatoColtura(BigDecimal fatturatoColtura) {
-		this.fatturatoColtura = fatturatoColtura;
+	public void setQuantitaRaccoltoMarcio(BigDecimal quantitaRaccoltoMarcio) {
+		this.quantitaRaccoltoMarcio = quantitaRaccoltoMarcio;
+	}
+
+	public BigDecimal getQuantitaRaccoltoTerzi() {
+		return quantitaRaccoltoTerzi;
+	}
+
+	public void setQuantitaRaccoltoTerzi(BigDecimal quantitaRaccoltoTerzi) {
+		this.quantitaRaccoltoTerzi = quantitaRaccoltoTerzi;
+	}
+
+	public BigDecimal getFatturatoRaccolto() {
+		return fatturatoRaccolto;
+	}
+
+	public void setFatturatoRaccolto(BigDecimal fatturatoRaccolto) {
+		this.fatturatoRaccolto = fatturatoRaccolto;
 	}
 	
 }

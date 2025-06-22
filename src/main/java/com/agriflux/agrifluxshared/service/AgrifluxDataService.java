@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.agriflux.agrifluxshared.dto.ambiente.AmbienteDTO;
-import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaTempiDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneMorfologiaColturaDTO;
 
@@ -16,16 +15,6 @@ public interface AgrifluxDataService {
 	 * @return List di AmbienteDTO
 	 */
 	List<AmbienteDTO> findAllAmbienteSortById();
-	
-	
-	/**
-	 * Metodo che restituisce una mappa con chiave la tipologia di prodotto e come valore un'altra mappa con chiave
-	 * l'anno di riferimento e come valore un oggetto contenente i dati sulla quantita' del raccolto ed il fatturato
-	 * relativo a quell'anno
-	 * 
-	 * @return Map -> key : Prodotto | value : Map -> key : Anno Riferimento | value : {@code ProduzioneColturaDTO}
-	 */
-	Map<String, Map<String, ProduzioneColturaDTO>> findColtureJoinProduzione();
 	
 	/**
 	 * Metodo che restituisce una mappa con in chiave l'anno di semina e come valore una lista di oggetti
