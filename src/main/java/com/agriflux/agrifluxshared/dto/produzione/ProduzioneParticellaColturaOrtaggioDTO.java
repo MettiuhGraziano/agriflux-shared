@@ -1,33 +1,33 @@
 package com.agriflux.agrifluxshared.dto.produzione;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-public class ProduzioneMorfologiaColturaDTO {
+public class ProduzioneParticellaColturaOrtaggioDTO {
 	
 	private String prodottoColtivato;
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-	private Date dataRaccolto;
-	private long idMorfologia;
+	private LocalDate dataRaccolto;
+	private long idParticella;
 	private BigDecimal estensioneTerreno;
 	private BigDecimal pendenza;
 	private String esposizione;
 	private String litologia;
 	
-	public ProduzioneMorfologiaColturaDTO(String prodottoColtivato, Date dataRaccolto, long idMorfologia,
+	public ProduzioneParticellaColturaOrtaggioDTO(String prodottoColtivato, LocalDate dataRaccolto, long idParticella,
 			BigDecimal estensioneTerreno, BigDecimal pendenza, String esposizione, String litologia) {
 		this.prodottoColtivato = prodottoColtivato;
 		this.dataRaccolto = dataRaccolto;
-		this.idMorfologia = idMorfologia;
+		this.idParticella = idParticella;
 		this.estensioneTerreno = estensioneTerreno;
 		this.pendenza = pendenza;
 		this.esposizione = esposizione;
 		this.litologia = litologia;
 	}
 	
-	public ProduzioneMorfologiaColturaDTO() {}
+	public ProduzioneParticellaColturaOrtaggioDTO() {}
 
 	public String getProdottoColtivato() {
 		return prodottoColtivato;
@@ -37,20 +37,20 @@ public class ProduzioneMorfologiaColturaDTO {
 		this.prodottoColtivato = prodottoColtivato;
 	}
 
-	public Date getDataRaccolto() {
+	public LocalDate getDataRaccolto() {
 		return dataRaccolto;
 	}
 
-	public void setDataRaccolto(Date dataRaccolto) {
+	public void setDataRaccolto(LocalDate dataRaccolto) {
 		this.dataRaccolto = dataRaccolto;
 	}
 
-	public long getIdMorfologia() {
-		return idMorfologia;
+	public long getIdParticella() {
+		return idParticella;
 	}
 
-	public void setIdMorfologia(long idMorfologia) {
-		this.idMorfologia = idMorfologia;
+	public void setIdParticella(long idParticella) {
+		this.idParticella = idParticella;
 	}
 
 	public BigDecimal getEstensioneTerreno() {

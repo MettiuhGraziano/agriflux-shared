@@ -6,6 +6,7 @@ import java.util.Map;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneColturaTempiDTO;
 import com.agriflux.agrifluxshared.dto.produzione.ProduzioneDTO;
+import com.agriflux.agrifluxshared.dto.produzione.ProduzioneParticellaColturaOrtaggioDTO;
 
 public interface DatiProduzioneService {
 	
@@ -33,4 +34,12 @@ public interface DatiProduzioneService {
 	 * @return Map di ProduzioneColturaTempiDTO
 	 */
 	Map<String, List<ProduzioneColturaTempiDTO>> findProduzioneJoinColturaTempi();
+	
+	/**
+	 * Metodo che restituisce una mappa con in chiave l'id della produzione e come valore un oggetto
+	 * che contiene i dati relativi alla morfologia del terreno e l'id della coltura con la data di semina 
+	 * 
+	 * @return Map di ProduzioneMorfologiaColturaDTO
+	 */
+	Map<Long, ProduzioneParticellaColturaOrtaggioDTO> findProduzioneParticellaColturaOrtaggio();
 }
