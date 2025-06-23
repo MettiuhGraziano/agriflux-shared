@@ -1,7 +1,7 @@
 package com.agriflux.agrifluxshared.dto.ambiente;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 
 public class AmbienteDTO {
 	
@@ -11,8 +11,7 @@ public class AmbienteDTO {
 	private BigDecimal precipitazioni;
 	private BigDecimal irraggiamentoMedio;
 	private BigDecimal ombreggiamentoMedio;
-	private Date dataRilevazione;
-	private long idColtura;
+	private LocalDate dataRilevazione;
 	
 	public long getIdAmbiente() {
 		return idAmbiente;
@@ -62,20 +61,12 @@ public class AmbienteDTO {
 		this.ombreggiamentoMedio = ombreggiamentoMedio;
 	}
 	
-	public Date getDataRilevazione() {
+	public LocalDate getDataRilevazione() {
 		return dataRilevazione;
 	}
 	
-	public void setDataRilevazione(Date dataRilevazione) {
+	public void setDataRilevazione(LocalDate dataRilevazione) {
 		this.dataRilevazione = dataRilevazione;
-	}
-	
-	public long getIdColtura() {
-		return idColtura;
-	}
-	
-	public void setIdColtura(long idColtura) {
-		this.idColtura = idColtura;
 	}
 	
 }

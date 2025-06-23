@@ -1,10 +1,10 @@
-package com.agriflux.agrifluxshared.service;
+package com.agriflux.agrifluxshared.service.ambiente;
 
 import java.util.List;
 
 import com.agriflux.agrifluxshared.dto.ambiente.AmbienteDTO;
 
-public interface AgrifluxDataService {
+public interface DatiAmbienteService {
 	
 	/**
 	 * Metodo che restituisce la lista di dati Ambientali ordinati in modo ASCENDENTE tramite l'ID
@@ -12,5 +12,4 @@ public interface AgrifluxDataService {
 	 * @return List di AmbienteDTO
 	 */
 	List<AmbienteDTO> findAllAmbienteSortById();
-	
 }
