@@ -11,6 +11,7 @@ public class ProduzioneDTO {
 	private BigDecimal quantitaRaccoltoMarcio;
 	private BigDecimal quantitaRaccoltoTerzi;
 	private BigDecimal fatturatoRaccolto;
+	private BigDecimal consumoIdrico;
 	
 	private int numLavoratori;
 	
@@ -20,13 +21,14 @@ public class ProduzioneDTO {
 
 	public ProduzioneDTO(long idProduzione, BigDecimal quantitaRaccolto, BigDecimal quantitaRaccoltoVenduto,
 			BigDecimal quantitaRaccoltoMarcio, BigDecimal quantitaRaccoltoTerzi, BigDecimal fatturatoRaccolto,
-			int numLavoratori, BigDecimal speseProduzione, long idColturaColtura) {
+			BigDecimal consumoIdrico, int numLavoratori, BigDecimal speseProduzione, long idColturaColtura) {
 		this.idProduzione = idProduzione;
 		this.quantitaRaccolto = quantitaRaccolto;
 		this.quantitaRaccoltoVenduto = quantitaRaccoltoVenduto;
 		this.quantitaRaccoltoMarcio = quantitaRaccoltoMarcio;
 		this.quantitaRaccoltoTerzi = quantitaRaccoltoTerzi;
 		this.fatturatoRaccolto = fatturatoRaccolto;
+		this.consumoIdrico = consumoIdrico;
 		this.numLavoratori = numLavoratori;
 		this.speseProduzione = speseProduzione;
 		this.idColturaColtura = idColturaColtura;
@@ -82,6 +84,14 @@ public class ProduzioneDTO {
 		this.fatturatoRaccolto = fatturatoRaccolto;
 	}
 
+	public BigDecimal getConsumoIdrico() {
+		return consumoIdrico;
+	}
+	
+	public void setConsumoIdrico(BigDecimal consumoIdrico) {
+		this.consumoIdrico = consumoIdrico;
+	}
+	
 	public int getNumLavoratori() {
 		return numLavoratori;
 	}
